@@ -70,28 +70,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter journal title here..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JBO-8w-TBI">
-                                <rect key="frame" x="31" y="107" width="343" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter journal title here..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JBO-8w-TBI">
+                                <rect key="frame" x="8" y="96" width="398" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Enter text here..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zm1-cQ-nUp">
-                                <rect key="frame" x="31" y="167" width="343" height="381"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Enter text here..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zm1-cQ-nUp">
+                                <rect key="frame" x="8" y="138" width="398" height="678"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bTG-KP-yDw">
-                                <rect key="frame" x="163" y="629" width="89" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Clear"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bTG-KP-yDw">
+                                <rect key="frame" x="8" y="824" width="398" height="30"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Clear">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="X4k-hW-rtm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zm1-cQ-nUp" firstAttribute="leading" secondItem="X4k-hW-rtm" secondAttribute="leading" constant="8" id="05H-bJ-Fu9"/>
+                            <constraint firstItem="zm1-cQ-nUp" firstAttribute="top" secondItem="JBO-8w-TBI" secondAttribute="bottom" constant="8" id="0SO-7l-Ao1"/>
+                            <constraint firstItem="JBO-8w-TBI" firstAttribute="leading" secondItem="X4k-hW-rtm" secondAttribute="leading" constant="8" id="LV2-nE-IDk"/>
+                            <constraint firstItem="JBO-8w-TBI" firstAttribute="top" secondItem="X4k-hW-rtm" secondAttribute="top" constant="8" id="MIC-5e-FuK"/>
+                            <constraint firstItem="X4k-hW-rtm" firstAttribute="bottom" secondItem="bTG-KP-yDw" secondAttribute="bottom" constant="8" id="Pvg-Y2-kE8"/>
+                            <constraint firstItem="X4k-hW-rtm" firstAttribute="trailing" secondItem="zm1-cQ-nUp" secondAttribute="trailing" constant="8" id="WkL-JI-wxJ"/>
+                            <constraint firstItem="X4k-hW-rtm" firstAttribute="trailing" secondItem="bTG-KP-yDw" secondAttribute="trailing" constant="8" id="YUa-NG-B7e"/>
+                            <constraint firstItem="X4k-hW-rtm" firstAttribute="trailing" secondItem="JBO-8w-TBI" secondAttribute="trailing" constant="8" id="gnc-xw-LXa"/>
+                            <constraint firstItem="bTG-KP-yDw" firstAttribute="top" secondItem="zm1-cQ-nUp" secondAttribute="bottom" constant="8" id="oiJ-hF-mUe"/>
+                            <constraint firstItem="bTG-KP-yDw" firstAttribute="leading" secondItem="X4k-hW-rtm" secondAttribute="leading" constant="8" id="zuU-ov-Cef"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="HQg-iJ-GnL">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="dy2-lh-UDE"/>
@@ -129,6 +142,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

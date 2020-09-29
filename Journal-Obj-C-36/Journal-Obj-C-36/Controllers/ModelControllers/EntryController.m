@@ -32,7 +32,13 @@
 
 - (void)addEntry:(NSString *)title text:(NSString *)text
 {
-    _entries = [self addEntry:title text:text];
+    if (!_entries)
+    {
+        _entries = [NSMutableArray new];
+    }
+    NSMutableArray *entry = [[NSMutableArray alloc] init];
+    Entry *newEntry = [[Entry alloc] initWithTitle:title text:text timestamp:[NSDate now]];
+    [entry addObject:newEntry];
 }
 
 - (void)removeEntry:(Entry *)entry
@@ -42,7 +48,9 @@
 
 - (void)updateEntry:(Entry *)entry title:(NSString *)title text:(NSString *)text
 {
-    
+    entry.title = title;
+    entry.text = text;
+    entry.timestamp = [NSDate now];
 }
 
 @end

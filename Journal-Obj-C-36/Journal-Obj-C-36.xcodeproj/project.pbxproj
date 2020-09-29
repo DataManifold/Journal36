@@ -14,6 +14,9 @@
 		B6478E252522866C0043ED52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6478E242522866C0043ED52 /* Assets.xcassets */; };
 		B6478E282522866C0043ED52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6478E262522866C0043ED52 /* LaunchScreen.storyboard */; };
 		B6478E2B2522866C0043ED52 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6478E2A2522866C0043ED52 /* main.m */; };
+		B6478E3F25228B220043ED52 /* Entry.m in Sources */ = {isa = PBXBuildFile; fileRef = B6478E3E25228B220043ED52 /* Entry.m */; };
+		B6478E43252293AC0043ED52 /* EntryController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6478E42252293AC0043ED52 /* EntryController.m */; };
+		B6478E472522AB2A0043ED52 /* EntryListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6478E462522AB290043ED52 /* EntryListTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,12 @@
 		B6478E272522866C0043ED52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6478E292522866C0043ED52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6478E2A2522866C0043ED52 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B6478E3D25228B220043ED52 /* Entry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Entry.h; sourceTree = "<group>"; };
+		B6478E3E25228B220043ED52 /* Entry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Entry.m; sourceTree = "<group>"; };
+		B6478E41252293AC0043ED52 /* EntryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EntryController.h; sourceTree = "<group>"; };
+		B6478E42252293AC0043ED52 /* EntryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EntryController.m; sourceTree = "<group>"; };
+		B6478E452522AB290043ED52 /* EntryListTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EntryListTableViewController.h; sourceTree = "<group>"; };
+		B6478E462522AB290043ED52 /* EntryListTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EntryListTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,19 +70,81 @@
 		B6478E172522866B0043ED52 /* Journal-Obj-C-36 */ = {
 			isa = PBXGroup;
 			children = (
+				B6478E37252289640043ED52 /* Models */,
+				B6478E3B252289970043ED52 /* Views */,
+				B6478E382522896D0043ED52 /* Controllers */,
+				B6478E33252289230043ED52 /* Resources */,
+				B6478E1E2522866B0043ED52 /* ViewController.h */,
+				B6478E1F2522866B0043ED52 /* ViewController.m */,
+			);
+			path = "Journal-Obj-C-36";
+			sourceTree = "<group>";
+		};
+		B6478E33252289230043ED52 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				B6478E182522866B0043ED52 /* AppDelegate.h */,
 				B6478E192522866B0043ED52 /* AppDelegate.m */,
 				B6478E1B2522866B0043ED52 /* SceneDelegate.h */,
 				B6478E1C2522866B0043ED52 /* SceneDelegate.m */,
-				B6478E1E2522866B0043ED52 /* ViewController.h */,
-				B6478E1F2522866B0043ED52 /* ViewController.m */,
-				B6478E212522866B0043ED52 /* Main.storyboard */,
 				B6478E242522866C0043ED52 /* Assets.xcassets */,
 				B6478E262522866C0043ED52 /* LaunchScreen.storyboard */,
 				B6478E292522866C0043ED52 /* Info.plist */,
 				B6478E2A2522866C0043ED52 /* main.m */,
 			);
-			path = "Journal-Obj-C-36";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B6478E37252289640043ED52 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B6478E3D25228B220043ED52 /* Entry.h */,
+				B6478E3E25228B220043ED52 /* Entry.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B6478E382522896D0043ED52 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B6478E3A252289860043ED52 /* ModelControllers */,
+				B6478E39252289770043ED52 /* ViewControllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B6478E39252289770043ED52 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B6478E452522AB290043ED52 /* EntryListTableViewController.h */,
+				B6478E462522AB290043ED52 /* EntryListTableViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B6478E3A252289860043ED52 /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B6478E41252293AC0043ED52 /* EntryController.h */,
+				B6478E42252293AC0043ED52 /* EntryController.m */,
+			);
+			path = ModelControllers;
+			sourceTree = "<group>";
+		};
+		B6478E3B252289970043ED52 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B6478E3C252289A60043ED52 /* CustomView */,
+				B6478E212522866B0043ED52 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B6478E3C252289A60043ED52 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +217,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6478E202522866B0043ED52 /* ViewController.m in Sources */,
+				B6478E3F25228B220043ED52 /* Entry.m in Sources */,
+				B6478E43252293AC0043ED52 /* EntryController.m in Sources */,
 				B6478E1A2522866B0043ED52 /* AppDelegate.m in Sources */,
 				B6478E2B2522866C0043ED52 /* main.m in Sources */,
 				B6478E1D2522866B0043ED52 /* SceneDelegate.m in Sources */,
+				B6478E472522AB2A0043ED52 /* EntryListTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +367,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 746938BQUT;
-				INFOPLIST_FILE = "Journal-Obj-C-36/Info.plist";
+				INFOPLIST_FILE = "Journal-Obj-C-36/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,7 +385,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 746938BQUT;
-				INFOPLIST_FILE = "Journal-Obj-C-36/Info.plist";
+				INFOPLIST_FILE = "Journal-Obj-C-36/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
